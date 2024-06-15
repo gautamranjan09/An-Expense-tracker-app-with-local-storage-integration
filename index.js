@@ -23,6 +23,8 @@ form.addEventListener("submit", function(event){
       };
       
       localStorage.setItem(event.target.description.value, JSON.stringify(myObj));
+      
+      //delete
       deleteButton.addEventListener("click", function (event) {
         //console.log(event.target.parentElement)
         //const email1 = document.getElementById("email");
@@ -30,6 +32,8 @@ form.addEventListener("submit", function(event){
         localStorage.removeItem(myObj.description);
         
       });
+
+      //edit
       editButton.addEventListener("click", function (event) {
         //console.log(event.target.parentElement)
         const amount1 = document.getElementById("amount");
